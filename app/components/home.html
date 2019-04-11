@@ -1,0 +1,531 @@
+
+<header>
+    <nav class="nav">
+        <div class="col-lg-6 first-nav" align="left">
+            <input type="text" class="form-control" placeholder="Buscar" style="width:50%;height:30%;" /><span class="glyphicon glyphicon-search" aria-hidden="true"></span>        
+        </div>
+        <div class="col-lg-6 second-nav" align="right">
+            <ul>
+                <li class="header-list"><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Minha conta</a></li>
+                <li class="header-list"><a ng-click="openLoginModal()"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Entrar</a></li>
+                <li class="header-list"><a><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Carrinho: 0 intens</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-12 sub-nav">
+            <div class="metade">
+                <input type="text" class="form-control" placeholder="Buscar" style="width:50%;height:30%;margin-bottom:5px" /><span class="glyphicon glyphicon-search" aria-hidden="true"></span>        
+            </div>
+            <div class="metade">
+                <ul align="right" style="clear:left;margin-top:5px">
+                    <li class="header-list"><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Minha conta</a></li>
+                    <li class="header-list"><a ng-click="openLoginModal()"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Entrar</a></li>
+                    <li class="header-list"><a><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Carrinho: 0 intens</a></li>
+                </ul>
+            </div>                    
+        </div>
+    </nav>
+
+<div class="mobile-nav">
+    <div class="terceira">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" ng-click="mobileMenu()"></span>
+    </div>
+    <div class="terceira">
+        <div style="clear:left;height:100%" align="center">
+            <h1 class="name-of">Core<strong>Biz</strong><strong style="color:#00768F;font-size:50px;">.</strong></h1>
+            <h4 class="subtexto">Marketing Cognitivo & Omnichannel</h4>
+        </div>
+    </div>
+    <div class="terceira">
+        <ul style="clear:left;" align="right"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" id="last-cart" ></span></ul>
+    </div>
+</div>
+
+<div class="mobile-menu" id="mobile-menu">
+    <div class="account-mob">
+        <button type="button" class="close" aria-label="Close" style="color:black" ng-click="mobileMenu()">
+            <span aria-hidden="true" style="padding-right:5px">&times;</span>            
+        </button>
+        <br>
+        <ol align="center"><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Minha conta</a></ol>
+        <ol align="center"><a ng-click="openLoginModal()"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Entrar</a></ol>        
+    </div>
+    <ul class="mob-list" align="center">        
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>CAMISAS</strong></a></li>
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>CAMISETAS</strong></a></li>
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>BLUSAS</strong></a></li>
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>BERMUDAS</strong></a></li>
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>CALÇAS</strong></a></li>
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>ACCESÓRIOS</strong></a></li>
+        <li style="padding:10px 0;border-bottom: 1px solid black"><a style="text-decoration:none;color:white;"><strong>SALES</strong></a></li>
+    </ul>
+</div>
+
+
+<div class="title-site" align="center">
+    <h1 style="cursor:pointer">Core<strong>Biz</strong><strong style="color:#00768F;font-size:100px;">.</strong></h1>
+    <h4 style="cursor:pointer">Marketing Cognitivo & Omnichannel</h4>
+</div>
+
+<div class="adapt-search" align="center">
+    <input type="text" class="form-control" style="width:95%;height:40px" placeholder="Buscar">
+</div>
+
+<div class="listing">
+    <nav class="nav nav-menu">
+        <ul align="center" style="padding:8px 0 0 0">
+            <li class="menu-list"><a class="option-menu">CAMISAS</a></li>
+            <li class="menu-list"><a class="option-menu">CAMISETAS</a></li>
+            <li class="menu-list"><a class="option-menu">BLUSAS</a></li>
+            <li class="menu-list"><a class="option-menu">BERMUDAS</a></li>
+            <li class="menu-list"><a class="option-menu">CALÇAS</a></li>
+            <li class="menu-list"><a class="option-menu">ACCESÓRIOS</a></li>
+            <li class="menu-list"><a class="option-menu">SALES</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<div class="conteudo">
+    <div class="informative">
+        <div class="benefits">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570627.jpg" style="float:left" width="45" height="45" alt="truck image">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571272.jpg" style="float:right" width="5" height="45" alt="cko-logo" id="bar">
+            <p style="padding-top:10px;font-size:12px;color:#7E7E7E;font-weight:bold;margin-bottom:0">FRETE GRÁTIS P/ TODO BRASIL</p>
+            <p style="padding-top:0;font-size:10px;color:#7E7E7E;font-weight:bold">Nas compras acima de R$200</p>        
+        </div>
+        <div class="benefits">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570624.jpg" style="float:left" width="35" height="45" alt="calendar image">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571272.jpg" style="float:right" width="5" height="45" alt="cko-logo" id="bar">
+            <p style="padding-top:10px;font-size:12px;color:#7E7E7E;font-weight:bold;margin-bottom:0">30 DIAS DE TROCA GRÁTIS</p>
+            <p style="padding-top:0;font-size:10px;color:#7E7E7E;font-weight:bold">Você tem até 30 dias para trocar</p>
+        </div>
+        <div class="benefits">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570625.jpg" style="float:left" width="45" height="45" alt="coin image">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571272.jpg" style="float:right" width="5" height="45" alt="cko-logo" id="bar">
+            <p style="padding-top:10px;font-size:12px;color:#7E7E7E;font-weight:bold;margin-bottom:0">PAGUE EM ATÉ 12X S/ JUROS</p>
+            <p style="padding-top:0;font-size:10px;color:#7E7E7E;font-weight:bold">Parcela mínima de R$50</p>
+        </div>
+        <div class="benefits">
+            <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570626.jpg" style="float:left" width="35" height="45" alt="phone image">
+            <p style="padding-top:10px;font-size:12px;color:#7E7E7E;font-weight:bold;margin-bottom:0">TELEVENDAS: (11) 4063-3682</p>
+            <p style="padding-top:0;font-size:10px;color:#7E7E7E;font-weight:bold">Atendimento 24 horas por dia</p>
+        </div>
+    </div>
+
+
+    <div class="roll">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">        
+        
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571702.jpg" class="banner-img" alt="first banner">
+
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571703.jpg" class="banner-img-tbl" alt="first banner">
+                
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width:25px;">
+            <span class="glyphicon glyphicon-chevron-left" style="border-top-width: 5px;border-bottom-width: 5px;border-left-width: 5px;border-right-width: 5px;"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width:25px;">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            
+        </div>    
+    </div>
+
+
+    <div class="space">        
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571343.jpg" class="first-medium-banner" alt="first medium banner" style="max-width:100%;height:auto;">        
+    </div>
+    <div class="space">        
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571342.jpg" class="second-medium-banner" alt="second medium banner" style="max-width:100%;height:auto;">                          
+    </div>
+    <div class="space">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571341.jpg" class="third-medium-banner" alt="second medium banner" style="max-width:100%;height:auto;">                
+    </div>
+ 
+
+    <div class="space-medium">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571355.jpg" class="first-medium-banner-2" alt="first medium banner" style="max-width:100%;height:auto;">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571357.jpg" class="first-medium-banner-3" alt="first medium banner" style="max-width:100%;height:auto;"> 
+    </div>
+
+    <div class="space-medium-sec">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571359.jpg" class="first-medium-banner-2" alt="first medium banner" style="max-width:100%;height:auto;">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571356.jpg" class="second-medium-banner-3" alt="second medium banner" style="max-width:100%;height:auto;">
+    </div>
+
+    <div class="space-medium-last">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571354.jpg" class="first-medium-banner-2" alt="first medium banner" style="max-width:100%;height:auto;">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571358.jpg" class="third-medium-banner-3" alt="second medium banner" style="max-width:100%;height:auto;">
+    </div>
+
+
+    <div class="destaque-line">
+        <h3><span>DESTAQUES</span></h3>
+    </div>
+
+    <div class="collection-element">
+        <div class="card" align="center">
+            <div class="product-img">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong>R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="collection-element">
+        <div class="card" align="center">
+            <div class="product-img">
+                    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong>R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>
+            </div>
+        </div>            
+    </div>
+    <div class="collection-element">
+        <div class="card" align="center">
+            <div class="product-img">
+                    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong><s style="color:#ABABAB">R$ 70,00</s> R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>
+            </div>
+        </div>            
+    </div>
+    <div class="collection-element">
+        <div class="flag" align="center">INDISPONÍVEL</div>
+        <div class="card" align="center">
+            <div class="product-img">
+                    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong>R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>                        
+            </div>
+        </div>            
+    </div>
+
+    <div class="collection-element">
+        <div class="card" align="center">
+            <div class="product-img">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong>R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="collection-element">
+        <div class="card" align="center">
+            <div class="product-img">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong>R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>
+            </div>
+        </div>            
+    </div>
+    <div class="collection-element">
+        <div class="card" align="center">
+            <div class="product-img">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong><s style="color:#ABABAB">R$ 70,00</s> R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>
+            </div>
+        </div>            
+    </div>
+    <div class="collection-element">
+        <div class="flag" align="center">INDISPONÍVEL</div>
+        <div class="card" align="center">
+            <div class="product-img">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571527.jpg" class="prod-img--first" alt="product image">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571643.jpg" class="prod-img--min" alt="product image">
+            </div>
+            <div class="card-body">
+                <p style="color:#646464;font-size:16px;margin:20px 0 20px 0;"><strong>Legging Faux Leather Sailor</strong></p>
+                <p style="margin-bottom:0;padding-bottom:0;color:#B53E39;font-size:17px"><strong>R$ 60,00</strong></p>
+                <p style="color:#646464;margin:0;font-size:17px"><strong>3X DE R$20,00</strong></p>                        
+            </div>
+        </div>            
+    </div>
+
+
+    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571724.jpg" class="banner-bottom-ext" alt="banner bottom">
+    <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571728.jpg" class="banner-bottom-min" alt="banner bottom">
+ 
+    <div class="destaque-line">
+        <h3><span>INSTAGRAM</span></h3>
+    </div>
+
+<div class="last-colection">    
+    <div class="collection-igrm">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571732.jpg" class="img-instagram" alt="banner bottom">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571733.jpg" class="img-instagram-min" alt="banner bottom">
+    </div>
+    <div class="collection-igrm">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571732.jpg" class="img-instagram" alt="banner bottom">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571733.jpg" class="img-instagram-min" alt="banner bottom">
+    </div>
+    <div class="collection-igrm">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571732.jpg" class="img-instagram" alt="banner bottom">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571733.jpg" class="img-instagram-min" alt="banner bottom">
+    </div>
+    <div class="collection-igrm">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571732.jpg" class="img-instagram" alt="banner bottom">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571733.jpg" class="img-instagram-min" alt="banner bottom">
+    </div>
+    <div class="collection-igrm">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571732.jpg" class="img-instagram" alt="banner bottom">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571733.jpg" class="img-instagram-min" alt="banner bottom">
+    </div>
+    <div class="collection-igrm">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571732.jpg" class="img-instagram" alt="banner bottom">
+        <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571733.jpg" class="img-instagram-min" alt="banner bottom">
+    </div>
+</div>
+
+    <div class="content-footer">
+        <p style="font-size:13px;color:black;letter-spacing:2px">INSTITUCIONAL</p>
+        <br>
+        <ul style="padding-left:0;">
+            <li class="footer-list"><a class="info-footer">→ Quem Somos</a></li>
+            <li class="footer-list"><a class="info-footer">→ Contato</a></li>
+        </ul>
+    </div>
+    <div class="content-footer">
+        <p style="font-size:13px;color:black;letter-spacing:2px">AJUDA & SUPORTE</p>
+        <br>
+        <ul style="padding-left:0;">
+            <li class="footer-list"><a class="info-footer">→ Como Compra</a></li>
+            <li class="footer-list"><a class="info-footer">→ Termos e Condições</a></li>
+        </ul>
+    </div>
+    <div class="content-footer">
+        <p style="font-size:13px;color:black;letter-spacing:2px">NEWSLETTER</p>
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Insira seu e-mail">
+                <span class="input-group-btn">
+                    <button class="btn btn-news" type="button">Assinar</button>
+                </span>
+        </div>
+    </div>
+    <div class="content-footer">
+        <p style="font-size:13px;color:black;letter-spacing:2px;clear:left;text-align:right">REDES SOCIAIS</p>
+        <br>
+        <ul style="clear:left" align="right">
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570973.jpg" width="15" height="30" alt="facebook logo">
+            </li>
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570975.jpg" width="30" height="25" alt="twitter logo">                
+            </li>
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570974.jpg" width="30" height="30" alt="instagram logo">
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-footer-mob2">
+        <p style="font-size:13px;color:black;letter-spacing:2px">INSTITUCIONAL</p>
+        <ul style="padding-left:0;">
+            <li class="footer-list"><a class="info-footer">→ Quem Somos</a></li>
+            <li class="footer-list"><a class="info-footer">→ Contato</a></li>
+        </ul>
+    </div>
+    <div class="content-footer-mob2">
+        <p style="font-size:13px;color:black;letter-spacing:2px">AJUDA & SUPORTE</p>
+        <ul style="padding-left:0;">
+            <li class="footer-list"><a class="info-footer">→ Como Compra</a></li>
+            <li class="footer-list"><a class="info-footer">→ Termos e Condições</a></li>
+        </ul>
+    </div>
+    <div class="content-footer-mob2">
+        <p style="font-size:13px;color:black;letter-spacing:2px">NEWSLETTER</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Insira seu e-mail">
+            <span class="input-group-btn">
+                <button class="btn btn-news" type="button">Assinar</button>
+            </span>
+        </div>
+    </div>
+    <div class="content-footer-mob2">
+        <p style="font-size:13px;color:black;letter-spacing:2px;clear:left;text-align:right">REDES SOCIAIS</p>
+        <ul style="clear:left;margin-bottom:4px" align="right">
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570973.jpg" width="15" height="30" alt="facebook logo">
+            </li>
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570975.jpg" width="30" height="25" alt="twitter logo">                
+            </li>
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570974.jpg" width="30" height="30" alt="instagram logo">
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-footer-mob-3">
+        <p style="font-size:13px;color:black;letter-spacing:2px">NEWSLETTER</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Insira seu e-mail">
+            <span class="input-group-btn">
+                <button class="btn btn-news" type="button">Assinar</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="content-footer-mob--3">
+        <p style="font-size:13px;color:black;letter-spacing:2px">INSTITUCIONAL</p>
+        <ul style="padding-left:0;">
+            <li class="footer-list"><a class="info-footer">→ Quem Somos</a></li>
+            <li class="footer-list"><a class="info-footer">→ Contato</a></li>
+        </ul>
+    </div>
+    <div class="content-footer-mob--3">
+        <p style="font-size:13px;color:black;letter-spacing:2px">AJUDA & SUPORTE</p>
+        <ul style="padding-left:0;">
+            <li class="footer-list"><a class="info-footer">→ Como Compra</a></li>
+            <li class="footer-list"><a class="info-footer">→ Termos e Condições</a></li>
+        </ul>
+    </div>
+
+    <div class="content-footer-mob-3">
+        <p style="font-size:13px;color:black;letter-spacing:2px;">REDES SOCIAIS</p>
+        <ul style="margin-bottom:4px" align="left">
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570973.jpg" width="15" height="30" alt="facebook logo">
+            </li>
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570975.jpg" width="30" height="25" alt="twitter logo">                
+            </li>
+            <li class="social">
+                <img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/570974.jpg" width="30" height="30" alt="instagram logo">
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="payment-types">
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571867.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571864.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571860.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571862.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571857.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571858.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571861.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571863.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571859.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571865.jpg" alt="facebook logo"></li>
+        <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571866.jpg" alt="facebook logo"></li>    
+    </div>
+
+    <div class="payment-types-min">
+        <ul style="clear:left;margin:0;padding:0" align="center">
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571867.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571864.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571860.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571862.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571857.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571858.jpg" alt="facebook logo"></li>
+        </ul>        
+    </div>
+    <div class="payment-types-min">
+        <ul style="clear:left;margin:0;padding:0" align="center">
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571861.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571863.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571859.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571865.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571866.jpg" alt="facebook logo"></li>
+        </ul>    
+    </div>
+
+    <div class="payment-types--min">
+        <ul style="clear:left;margin:0;padding:0" align="center">
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571867.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571864.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571860.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571862.jpg" alt="facebook logo"></li>
+        </ul>
+    </div>
+    <div class="payment-types--min">
+        <ul style="clear:left;margin:0;padding:0" align="center">
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571857.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571858.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571861.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571863.jpg" alt="facebook logo"></li>
+        </ul>    
+    </div>
+    <div class="payment-types--min">
+        <ul style="clear:left;margin:0;padding:0" align="center">
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571859.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571865.jpg" alt="facebook logo"></li>
+            <li class="pay-list"><img src="http://clickoneroservicios.vteximg.com.br/arquivos/ids/571866.jpg" alt="facebook logo"></li>
+        </ul>
+    </div>
+
+    <div class="direitos">
+        <p style="clear:left;font-size:12px;text-align:center;margin:0">&#169; 2015 Loja Virtual. Todos os direitos reservados.</p>
+    </div>
+
+</div>
+
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="login-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 align="center">Bem vindo!</h4>
+                <label for="id">Insira seu email</label>
+                <input type="text" class="form-control" id="email" placeholder="Seu email">
+                <br>
+                <label for="id">Insira sua senha</label>
+                <input type="text" class="form-control" id="senha" placeholder="Sua senha">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6" align="right">
+                    <a class="forget">Esqueci minha senha</a>
+                </div>
+                <br><br>
+                <button type="button" class="btn btn-getin" data-dismiss="modal">Entrar</button>
+                <div class="line-modal">
+                    <h3><span>ou</span></h3>
+                </div>
+
+                <button type="button" class="btn btn-social" data-dismiss="modal">Conectar com o facebook</button>
+                <br><br>
+                <h4 align="center">Novo aquí? <a class="forget" data-dismiss="modal">Cadastre-se agora</a></h4>
+            </div>            
+        </div>
+    </div>
+</div>
+
+
+    
